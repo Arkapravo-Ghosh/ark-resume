@@ -59,6 +59,10 @@
   \hrule
   \begin{list}{}{
       \setlength{\leftmargin}{0em}
+      \setlength{\topsep}{3pt}
+      \setlength{\partopsep}{0pt}
+      \setlength{\parskip}{2pt}
+      \setlength{\parsep}{2pt}
     }
     \item[]
           }{
@@ -68,10 +72,12 @@
 \let\endolditemize\enditemize
 \renewenvironment{itemize}{
   \begin{olditemize}
-    \setlength{\itemsep}{0em}
-    \setlength{\parskip}{0.1em}
-    \setlength{\parsep}{0.1em}
-    \setlength{\baselineskip}{1.02em}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{1pt}
+    \setlength{\parsep}{1pt}
+    \setlength{\topsep}{3pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\baselineskip}{1.1em}
     }{
   \end{olditemize}
 }
